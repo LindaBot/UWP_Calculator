@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -55,27 +56,41 @@ namespace HelloWorld
             AnswerTextBlock.Text = number.ToString();
         }
 
+        private async void WarningPopUp() {
+            var messageDialog = new MessageDialog("Please enter only numbers");
+            await messageDialog.ShowAsync();
+        }
+
         private void Calc(object sender, RoutedEventArgs e)
         {
             var button = (Button)sender;
             string operation = button.Content.ToString();
-            Int32 num1 = Convert.ToInt32(input1.Text);
-            Int32 num2 = Convert.ToInt32(input2.Text);
+            try
+            {
+                Int32 num1 = Convert.ToInt32(input1.Text);
+                Int32 num2 = Convert.ToInt32(input2.Text);
 
-            switch (operation) {
-                case "+":
-                    ChangeAnswer(num1 + num2);
-                    break;
-                case "-":
-                    ChangeAnswer(num1 - num2);
-                    break;
-                case "*":
-                    ChangeAnswer(num1 * num2);
-                    break;
-                case "/":
-                    ChangeAnswer(num1 / num2);
-                    break;
+                switch (operation)
+                {
+                    case "+":
+                        ChangeAnswer(num1 + num2);
+                        break;
+                    case "-":
+                        ChangeAnswer(num1 - num2);
+                        break;
+                    case "*":
+                        ChangeAnswer(num1 * num2);
+                        break;
+                    case "/":
+                        ChangeAnswer(num1 / num2);
+                        break;
+                }
             }
+            catch{
+                WarningPopUp();
+                return;
+            }
+
         }
     }
 }

@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\David\UWP\HelloWorld\HelloWorld\HelloWorld\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-12-08T04:17:04.641</Modified>
+      <Modified>2018-12-08T04:22:47.912</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\David\UWP\HelloWorld\HelloWorld\HelloWorld\bin\x86\Debug\HelloWorld.exe">
       <PackagePath>entrypoint\HelloWorld.exe</PackagePath>
-      <Modified>2018-12-08T04:17:04.252</Modified>
+      <Modified>2018-12-08T04:22:47.485</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -538,11 +538,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\David\UWP\HelloWorld\HelloWorld\HelloWorld\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2018-12-08T04:17:04.079</Modified>
+      <Modified>2018-12-08T04:22:47.281</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\David\UWP\HelloWorld\HelloWorld\HelloWorld\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2018-12-08T04:17:04.080</Modified>
+      <Modified>2018-12-08T04:22:47.281</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -554,7 +554,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\David\UWP\HelloWorld\HelloWorld\HelloWorld\bin\x86\Debug\Core\HelloWorld.exe">
       <PackagePath>HelloWorld.exe</PackagePath>
-      <Modified>2018-12-08T04:17:04.637</Modified>
+      <Modified>2018-12-08T04:22:47.907</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
