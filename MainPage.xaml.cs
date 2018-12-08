@@ -38,5 +38,44 @@ namespace HelloWorld
             number--;
             Counter.Text = number.ToString();
         }
+
+        private void Exit(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Exit();
+        }
+
+        private void Reset(object sender, RoutedEventArgs e)
+        {
+            AnswerTextBlock.Text = "Your answer will appear here";
+            input1.Text = "";
+            input2.Text = "";
+        }
+
+        private void ChangeAnswer(Int32 number) {
+            AnswerTextBlock.Text = number.ToString();
+        }
+
+        private void Calc(object sender, RoutedEventArgs e)
+        {
+            var button = (Button)sender;
+            string operation = button.Content.ToString();
+            Int32 num1 = Convert.ToInt32(input1.Text);
+            Int32 num2 = Convert.ToInt32(input2.Text);
+
+            switch (operation) {
+                case "+":
+                    ChangeAnswer(num1 + num2);
+                    break;
+                case "-":
+                    ChangeAnswer(num1 - num2);
+                    break;
+                case "*":
+                    ChangeAnswer(num1 * num2);
+                    break;
+                case "/":
+                    ChangeAnswer(num1 / num2);
+                    break;
+            }
+        }
     }
 }

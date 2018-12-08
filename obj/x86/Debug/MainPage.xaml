@@ -6,13 +6,22 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+>
 
     <Grid>
+        <TextBlock x:ConnectionId='2' x:Name="Counter" HorizontalAlignment="Left" Margin="10,10,0,0" Text="Calculator" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='3' x:Name="AnswerTextBlock" HorizontalAlignment="Left" Margin="10,35,0,0" Text="Your answer will appear here" VerticalAlignment="Top" Width="340"/>
+        <TextBox x:ConnectionId='4' x:Name="input1" HorizontalAlignment="Left" PlaceholderText="Enter your number" VerticalAlignment="Top" Margin="10,60,0,0" Width="222"/>
+        <Button x:ConnectionId='5'              Content="Exit" HorizontalAlignment="Left" Margin="270,60,0,0" VerticalAlignment="Top" Width="70"/>
+        <TextBox x:ConnectionId='6' x:Name="input2" HorizontalAlignment="Left" PlaceholderText="Enter your number" VerticalAlignment="Top" Margin="10,97,0,0" Width="222"/>
+        <Button x:ConnectionId='7'               Content="Reset" HorizontalAlignment="Left" Margin="270,97,0,0" VerticalAlignment="Top" Width="70"/>
 
-        <TextBlock x:ConnectionId='2' x:Name="Counter" HorizontalAlignment="Left" Margin="10,10,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <Button x:ConnectionId='3' Content="Add One" HorizontalAlignment="Left" VerticalAlignment="Top"                Margin="10,35,0,0"/>
-        <Button x:ConnectionId='4' Content="Minus One" HorizontalAlignment="Left" VerticalAlignment="Top"                  Margin="103,35,0,0"/>
+
+        <Button x:ConnectionId='8'              Content="+" HorizontalAlignment="Left" Margin="10,157,0,0" VerticalAlignment="Top" Width="70"/>
+        <Button x:ConnectionId='9'              Content="-" HorizontalAlignment="Left" Margin="85,157,0,0" VerticalAlignment="Top" Width="70"/>
+        <Button x:ConnectionId='10'              Content="*" HorizontalAlignment="Left" Margin="160,157,0,0" VerticalAlignment="Top" Width="70"/>
+        <Button x:ConnectionId='11'              Content="/" HorizontalAlignment="Left" Margin="235,157,0,0" VerticalAlignment="Top" Width="70"/>
     </Grid>
 </Page>
 
