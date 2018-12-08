@@ -27,8 +27,16 @@ namespace HelloWorld
             this.InitializeComponent();
         }
 
-        private void buttonOnClick(object sender, RoutedEventArgs args) {
-            TextField.Text = "Hello world";
+        private void AddOne(object sender, RoutedEventArgs args) {
+            int number = Convert.ToInt32(Counter.Text);
+            number++;
+            Counter.Text = number.ToString();
+        }
+
+        private void MinusOne(Object sender, RoutedEventArgs args) {
+            int number = Convert.ToInt32(Counter.Text);
+            number--;
+            Counter.Text = number.ToString();
         }
     }
 }

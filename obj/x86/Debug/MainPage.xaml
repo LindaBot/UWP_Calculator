@@ -9,8 +9,10 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button x:ConnectionId='2' Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top"                      />
-        <TextBlock x:ConnectionId='3' x:Name="TextField" Text="Look at me" HorizontalAlignment="Stretch" Margin="0,37,0,-37" VerticalAlignment="Stretch" />
+
+        <TextBlock x:ConnectionId='2' x:Name="Counter" HorizontalAlignment="Left" Margin="10,10,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='3' Content="Add One" HorizontalAlignment="Left" VerticalAlignment="Top"                Margin="10,35,0,0"/>
+        <Button x:ConnectionId='4' Content="Minus One" HorizontalAlignment="Left" VerticalAlignment="Top"                  Margin="103,35,0,0"/>
     </Grid>
 </Page>
 
